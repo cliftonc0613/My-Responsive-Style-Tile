@@ -9824,38 +9824,3 @@ th.hide-for-touch {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background: #eeeeee;
-  padding: 2rem;
-}
-
-body {
-  padding: 2rem;
-  background: blue;
-}
-
-a {
-  color: #35a8ff;
-  text-decoration: none;
-}
-a:hover, a:focus {
-  color: #0067b4;
-}
-
-.moving-box {
-  background: #f06d06;
-  width: 100px;
-  height: 100px;
-  animation: swing 3s ease alternate infinite;
-}
-
-@keyframes swing {
-  100% {
-    transform: translateX(100px);
-  }
-}
