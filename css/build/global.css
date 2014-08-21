@@ -506,7 +506,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 75rem;
 }
 .row:before, .row:after {
   content: " ";
@@ -4674,7 +4674,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal, dialog {
     width: 80%;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4697,7 +4697,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4706,7 +4706,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4715,7 +4715,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4724,7 +4724,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4733,7 +4733,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -4750,7 +4750,7 @@ dialog .columns {
 @media only screen and (min-width: 40.063em) {
   .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 62.5rem;
+    max-width: 75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5976,13 +5976,13 @@ meta.foundation-mq-topbar {
 }
 .fixed.expanded:not(.top-bar) .top-bar-section {
   z-index: 98;
-  margin-top: 45px;
+  margin-top: 60px;
 }
 
 .top-bar {
   overflow: hidden;
-  height: 45px;
-  line-height: 45px;
+  height: 60px;
+  line-height: 60px;
   position: relative;
   background: #333333;
   margin-bottom: 0;
@@ -6015,12 +6015,12 @@ meta.foundation-mq-topbar {
   margin: 0;
 }
 .top-bar .name {
-  height: 45px;
+  height: 60px;
   margin: 0;
   font-size: 16px;
 }
 .top-bar .name h1 {
-  line-height: 45px;
+  line-height: 60px;
   font-size: 1.0625rem;
   margin: 0;
 }
@@ -6029,7 +6029,7 @@ meta.foundation-mq-topbar {
   color: white;
   width: 75%;
   display: block;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .top-bar .toggle-topbar {
   position: absolute;
@@ -6043,9 +6043,9 @@ meta.foundation-mq-topbar {
   font-weight: bold;
   position: relative;
   display: block;
-  padding: 0 15px;
-  height: 45px;
-  line-height: 45px;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
 }
 .top-bar .toggle-topbar.menu-icon {
   top: 50%;
@@ -6054,7 +6054,7 @@ meta.foundation-mq-topbar {
 .top-bar .toggle-topbar.menu-icon a {
   height: 34px;
   line-height: 33px;
-  padding: 0 40px 0 15px;
+  padding: 0 45px 0 20px;
   color: white;
   position: relative;
 }
@@ -6065,7 +6065,7 @@ meta.foundation-mq-topbar {
   height: 0;
   top: 50%;
   margin-top: -8px;
-  right: 15px;
+  right: 20px;
   box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
   width: 16px;
 }
@@ -6115,7 +6115,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   color: white;
   padding: 12px 0 12px 0;
-  padding-left: 15px;
+  padding-left: 20px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
@@ -6123,8 +6123,8 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section ul li > a.button {
   font-size: 0.8125rem;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #008cba;
   border-color: #007095;
   color: white;
@@ -6170,8 +6170,8 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section ul li > button {
   font-size: 0.8125rem;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #008cba;
   border-color: #007095;
   color: white;
@@ -6229,7 +6229,7 @@ meta.foundation-mq-topbar {
   color: white;
 }
 .top-bar-section .has-form {
-  padding: 15px;
+  padding: 20px;
 }
 .top-bar-section .has-dropdown {
   position: relative;
@@ -6242,7 +6242,7 @@ meta.foundation-mq-topbar {
   border: inset 5px;
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
   border-left-style: solid;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-top: -4.5px;
   position: absolute;
   top: 50%;
@@ -6283,7 +6283,7 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section .dropdown li a {
   font-weight: normal;
-  padding: 8px 15px;
+  padding: 8px 20px;
 }
 .top-bar-section .dropdown li a.parent-link {
   font-weight: normal;
@@ -6294,20 +6294,20 @@ meta.foundation-mq-topbar {
 }
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
   color: white;
-  line-height: 22.5px;
+  line-height: 30px;
   display: block;
 }
 .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
   background: none;
 }
 .top-bar-section .dropdown li.has-form {
-  padding: 8px 15px;
+  padding: 8px 20px;
 }
 .top-bar-section .dropdown li .button, .top-bar-section .dropdown li button {
   top: auto;
 }
 .top-bar-section .dropdown label {
-  padding: 8px 15px 2px;
+  padding: 8px 20px 2px;
   margin-bottom: 0;
   text-transform: uppercase;
   color: #777777;
@@ -6352,7 +6352,7 @@ meta.foundation-mq-topbar {
   }
 
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 75rem;
     margin: 0 auto;
     margin-bottom: 0;
   }
@@ -6378,8 +6378,8 @@ meta.foundation-mq-topbar {
     color: white;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
-    padding: 0 15px;
-    line-height: 45px;
+    padding: 0 20px;
+    line-height: 60px;
     background: #333333;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -6387,8 +6387,8 @@ meta.foundation-mq-topbar {
     background: #272727;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button) {
-    padding: 0 15px;
-    line-height: 45px;
+    padding: 0 20px;
+    line-height: 60px;
     color: white;
     background: #008cba;
   }
@@ -6397,7 +6397,7 @@ meta.foundation-mq-topbar {
     color: white;
   }
   .top-bar-section .has-dropdown > a {
-    padding-right: 35px !important;
+    padding-right: 40px !important;
   }
   .top-bar-section .has-dropdown > a:after {
     content: "";
@@ -6408,7 +6408,7 @@ meta.foundation-mq-topbar {
     border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
     border-top-style: solid;
     margin-top: -2.5px;
-    top: 22.5px;
+    top: 30px;
   }
   .top-bar-section .has-dropdown.moved {
     position: relative;
@@ -6446,9 +6446,9 @@ meta.foundation-mq-topbar {
   }
   .top-bar-section .dropdown li a {
     color: white;
-    line-height: 45px;
+    line-height: 60px;
     white-space: nowrap;
-    padding: 12px 15px;
+    padding: 12px 20px;
     background: #333333;
   }
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
@@ -6473,13 +6473,13 @@ meta.foundation-mq-topbar {
     border-top: none;
     border-right: solid 1px #4e4e4e;
     clear: none;
-    height: 45px;
+    height: 60px;
     width: 0;
   }
   .top-bar-section .has-form {
     background: #333333;
-    padding: 0 15px;
-    height: 45px;
+    padding: 0 20px;
+    height: 60px;
   }
   .top-bar-section .right li .dropdown {
     left: auto;
@@ -9823,4 +9823,29 @@ th.hide-for-touch {
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
+}
+
+/*
+   HEADER SECTION
+   ========================================================================== */
+.header-section {
+  margin-bottom: 15px;
+}
+
+.color-blocks {
+  line-height: 0;
+  display: inline-block;
+  border: solid 5px white;
+  max-width: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+}
+.color-blocks:hover, .color-blocks:focus {
+  box-shadow: 0 0 6px 1px rgba(204, 204, 204, 0.5);
+}
+
+.red-cb {
+  height: 60px;
+  width: 60px;
+  background: red;
 }
