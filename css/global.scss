@@ -19,6 +19,14 @@ $links: #35a8ff;
 	margin-bottom: 15px;
 }
 
+
+/*
+   MAIN SECTION
+   ========================================================================== */
+img.logo {
+    width:100%;
+  }
+
 .color-blocks {
   @include thumb(
     // Width of border around thumbnail
@@ -29,11 +37,78 @@ $links: #35a8ff;
     $box-shadow-hover: 0 0 6px 1px rgba(#ccc,0.5)
     
   );
-  margin-top: 25px;
+  margin-top: 25px; 
+}
+.blue {
+   height: 60px;
+   width: 60px;
+   background: $ppblue;
+}
+.red {
+  height: 60px;
+  width: 60px;
+  background: red;
 }
 
-.red-cb {
-	height: 60px;
-	width: 60px;
-	background: red;
+.footer-section {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: $oil;
+  color: $white;
+  span.title {
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    &:before {
+      content: "\f000";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+  /*--adjust as necessary--*/
+      color: #000;
+      font-size: 18px;
+      padding-right: 0.5em;
+      position: absolute;
+      top: -3px;
+      left: -30px;
+    }
+  }
+  span {
+    display: block;
+    color: white;
+    font-size: 0.75rem;
+    padding-left: 40px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 16px;
+
+  }
 }
+
+.clear-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: $transparent,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:20px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  text-align: center;
+  border: 0;
+}
+
+.top-bar-section ul li.active > a {
+    background: darken($ppblue, 15%) !important;   
+}
+.top-bar-section li a:not(.button):hover {
+    background: $ppblue !important; /*example */
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+  background: darken($ppblue, 15%) !important;
+}
+

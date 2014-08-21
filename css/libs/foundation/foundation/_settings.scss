@@ -113,17 +113,19 @@ $row-width: rem-calc(1200);
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$ppblue: rgba(56, 84, 107, 1);
+$primary-color: darken($ppblue, 5%);
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
+$transparent : rgba(0,0,0,0);
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
@@ -1356,8 +1358,8 @@ $row-width: rem-calc(1200);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: darken($ppblue, 5%);
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 $topbar-height: 60px;
@@ -1368,9 +1370,9 @@ $topbar-height: 60px;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
-// $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-bg: $oil;
+$topbar-dropdown-bg: $ppblue;
+$topbar-dropdown-link-color: $white;
+$topbar-dropdown-link-bg: darken($ppblue, 5%);
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1379,13 +1381,13 @@ $topbar-height: 60px;
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;
 // $topbar-link-color-hover: $white;
-// $topbar-link-color-active: $white;
-// $topbar-link-color-active-hover: $white;
+$topbar-link-color-active: $white;
+$topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-color-hover: $charcoal;
+// $topbar-link-bg-color-hover: darken($ppblue, 15%);
 // $topbar-link-bg-hover: #272727;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
@@ -1422,7 +1424,7 @@ $topbar-height: 60px;
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
+$topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 // 36. Visibility Classes
