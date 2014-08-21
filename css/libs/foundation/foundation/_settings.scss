@@ -113,8 +113,7 @@ $row-width: rem-calc(1200);
 // $default-float: left;
 
 // We use these as default colors throughout
-$ppblue: rgba(56, 84, 107, 1);
-$primary-color: darken($ppblue, 5%);
+// $primary-color: #2ba6cb;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -122,16 +121,16 @@ $primary-color: darken($ppblue, 5%);
 // $info-color: #a0d3e8;
 
 $transparent : rgba(0,0,0,0);
-$white       : #FFFFFF;
-$ghost       : #FAFAFA;
-$snow        : #F9F9F9;
-$vapor       : #F6F6F6;
+// $white       : #FFFFFF;
+// $ghost       : #FAFAFA;
+// $snow        : #F9F9F9;
+// $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
-// $base        : #AAAAAA;
+$base        : #AAAAAA;
 // $aluminum    : #999999;
 // $jumbo       : #888888;
 // $monsoon     : #777777;
@@ -1358,11 +1357,11 @@ $vapor       : #F6F6F6;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: darken($ppblue, 5%);
-$topbar-bg: $topbar-bg-color;
+// $topbar-bg-color: $oil;
+// $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 60px;
+// $topbar-height: 60px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1370,9 +1369,9 @@ $topbar-height: 60px;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-$topbar-dropdown-bg: $ppblue;
-$topbar-dropdown-link-color: $white;
-$topbar-dropdown-link-bg: darken($ppblue, 5%);
+// $topbar-dropdown-bg: $oil;
+// $topbar-dropdown-link-color: $white;
+// $topbar-dropdown-link-bg: $oil
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1381,8 +1380,8 @@ $topbar-dropdown-link-bg: darken($ppblue, 5%);
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;
 // $topbar-link-color-hover: $white;
-$topbar-link-color-active: $white;
-$topbar-link-color-active-hover: $white;
+// $topbar-link-color-active: $white;
+// $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%

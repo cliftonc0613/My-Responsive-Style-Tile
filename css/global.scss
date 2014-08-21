@@ -42,7 +42,7 @@ img.logo {
 .blue {
    height: 60px;
    width: 60px;
-   background: $ppblue;
+   background: $primary-color;
 }
 .red {
   height: 60px;
@@ -101,14 +101,14 @@ img.logo {
   border: 0;
 }
 
-.top-bar-section ul li.active > a {
-    background: darken($ppblue, 15%) !important;   
-}
-.top-bar-section li a:not(.button):hover {
-    background: $ppblue !important; /*example */
-}
+// .top-bar-section ul li.active > a {
+//     background: darken($ppblue, 15%) !important;   
+// }
+// .top-bar-section li a:not(.button):hover {
+//     background: $ppblue !important; /*example */
+// }
 
-.top-bar-section li:not(.has-form) a:not(.button):hover{
-  background: darken($ppblue, 15%) !important;
-}
+// .top-bar-section li:not(.has-form) a:not(.button):hover{
+//   background: darken($ppblue, 15%) !important;
+// }
 
