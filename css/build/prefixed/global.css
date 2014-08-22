@@ -11800,6 +11800,10 @@ img.logo {
   color: white;
 }
 
+.custom-button-radius:hover {
+  background: #00526e;
+}
+
 .clear-panel {
   border-style: solid;
   border-width: 1px;
@@ -11850,33 +11854,25 @@ img.logo {
   line-height: 1.4;
 }
 
+.text h1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 .text h2 {
   margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .text p {
-  margin-top: 50px;
+  margin: 50px 0 10px 0;
 }
 
-span.h1-font {
-  position: absolute;
-  top: 3rem;
-  font-size: 15px;
-  margin-bottom: 20px;
-  color: #999999;
+.text a {
+  margin: 20px 0 5px 0;
 }
 
-span.h2-font {
-  position: absolute;
-  top: 7.2rem;
-  font-size: 15px;
-  margin-bottom: 20px;
-  color: #999999;
-}
-
-span.p-font {
-  position: absolute;
-  top: 15.4rem;
+span {
   font-size: 15px;
   margin-bottom: 20px;
   color: #999999;
@@ -11923,4 +11919,47 @@ span.p-font {
 .footer-section p {
   font-size: 15px;
   line-height: 16px;
+}
+
+hr.hr-alt {
+  margin: 20px 0;
+}
+
+.rotate {
+  /* IE 9 */
+  -webkit-transform: rotate(-30deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-30deg);
+}
+
+.learn-links {
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px 25px 0 0;
+  height: 250px;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.learn-links h4 {
+  margin: 20px 0 0 0;
+}
+
+.learn-links ul {
+  margin-left: 0;
+}
+
+.learn-links ul li {
+  display: block;
+}
+
+.learn-links.first {
+  border-left: 0px solid rgba(255, 255, 255, 0.8);
+}
+
+.learn-links.first ul {
+  margin-left: 0;
+}
+
+.learn-links.first ul li {
+  display: block;
 }

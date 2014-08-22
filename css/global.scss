@@ -78,7 +78,10 @@ img.logo {
   @include button($radius:3px);
   margin: 25px 15px; 
   padding: 15px 50px;
-  background: darken($primary-color, 10%)
+  background: darken($primary-color, 10%);
+  &:hover {
+    background: darken($primary-color, 15%);
+  }
 } 
 
 .clear-panel {
@@ -95,30 +98,28 @@ img.logo {
 }
 
 .text {
-  h2 {margin-top: 20px;}
-  p {margin-top: 50px;}
-}
-span.h1-font {
-  position: absolute;
-  top: 3rem;
-  font-size: 15px;
-  margin-bottom: 20px;
-  color: $aluminum;
-}
+  h1 {margin-top: 20px;
+    margin-bottom: 5px;}
+  h2 {margin-top: 20px;
+    margin-bottom: 5px;}
+  p {margin: 50px 0 10px 0;}
+  a {margin: 20px 0 5px 0;}
 
-span.h2-font {
-  position: absolute;
-  top: 7.2rem;
-  font-size: 15px;
-  margin-bottom: 20px;
-  color: $aluminum;
+
 }
-span.p-font {
-  position: absolute;
-  top: 15.4rem;
-  font-size: 15px;
-  margin-bottom: 20px;
-  color: $aluminum;
+span {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: $aluminum;
+  &.h1-font {
+  }
+  &.h2-font {
+  }
+  &.p-font {
+  }
+  &.alink-font {
+    
+  }
 }
 
 .footer-section {
@@ -160,6 +161,42 @@ span.p-font {
 
   }
 }
+
+hr.hr-alt {
+  margin: 20px 0;
+}
+
+.rotate {
+  -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+}
+
+// Wiget Areas
+.learn-links {
+  margin-top: 30px;
+  text-align: center;
+  padding: 10px 25px 0 0;
+  height:250px;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  h4 {margin: 20px 0 0 0}
+  ul {
+    margin-left: 0;
+    li {
+      display: block;
+    }
+  }
+  &.first {
+    border-left: 0px solid rgba(255, 255, 255, 0.8);
+    ul {
+      margin-left: 0;
+      li {
+        display: block;
+      }
+    }
+  }
+}
+
 
 
 
