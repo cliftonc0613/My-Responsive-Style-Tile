@@ -6,6 +6,7 @@ $links: #35a8ff;
 @import "libs/normalize";
 @import "libs/foundation/foundation/_settings";
 @import "libs/foundation/foundation";
+// @import "libs/foundation/foundicons";
 @import "libs/font-awesome/font-awesome";
 //http://owlgraphic.com/owlcarousel/
 @import "libs/owl.carousel";
@@ -24,7 +25,7 @@ $links: #35a8ff;
    MAIN SECTION
    ========================================================================== */
 img.logo {
-    width:100%;
+    width:400px;
   }
 
 .color-blocks {
@@ -38,16 +39,31 @@ img.logo {
     
   );
   margin-top: 25px; 
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
 }
 .blue {
-   height: 60px;
-   width: 60px;
    background: $primary-color;
 }
 .red {
-  height: 60px;
-  width: 60px;
   background: red;
+}
+
+.texture-blocks {
+  @include thumb(
+    // Width of border around thumbnail
+    $border-width: 5px,
+    // Box shadow to apply to thumbnail
+    $box-shadow: 0 0 0 1px rgba(#000,.2),
+    // Box shadow to apply on hover
+    $box-shadow-hover: 0 0 6px 1px rgba(#ccc,0.5)
+    
+  );
+  margin-top: 25px; 
+  margin-right: 20px;
+  height: 100px;
+  width: 100px;
 }
 
 .footer-section {
@@ -59,6 +75,8 @@ img.logo {
     position: relative;
     font-size: 1rem;
     margin-bottom: 5px;
+    padding-left: 35px;
+    color: lighten($oil, 15%);
     &:before {
       content: "\f000";
       font-family: FontAwesome;
@@ -66,19 +84,19 @@ img.logo {
       font-weight: normal;
       text-decoration: inherit;
   /*--adjust as necessary--*/
-      color: #000;
+      color: lighten($oil, 20%);
       font-size: 18px;
       padding-right: 0.5em;
       position: absolute;
-      top: -3px;
-      left: -30px;
+      top: 0px;
+      left: 0px;
     }
   }
-  span {
+  span.blub {
     display: block;
-    color: white;
+    color: lighten($oil, 15%);
     font-size: 0.75rem;
-    padding-left: 40px;
+    padding-left: 35px;
     line-height: 18px;
   }
   p {
