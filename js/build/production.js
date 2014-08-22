@@ -16772,14 +16772,9 @@ $(document).foundation();
 var doc = document.documentElement;
 doc.setAttribute('data-useragent', navigator.userAgent);
 
-
-jQuery(window).scroll(function() {
-    if (scroll >= 50) {
-        $('#logo-image').attr('src', 'images/CTWDlogo.png');
-        $(".important-class").addClass("padding-on-my-header");
-    }
-    if (scroll < 50) {
-        $(".important-class").removeClass("padding-on-my-header");
-        $('#logo-image').attr('src', 'images/CTWDlogo.png');
-    }
+$(document).on('close.fndtn.alert-box', function(event) {
+  console.info('An alert box has been closed!');
 });
+
+
+

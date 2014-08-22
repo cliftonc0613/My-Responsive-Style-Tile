@@ -12,6 +12,9 @@ $links: #35a8ff;
 @import "libs/owl.carousel";
 @import "owl.theme";
 
+body {
+  background: $smoke;
+}
 
 /*
    HEADER SECTION
@@ -62,8 +65,60 @@ img.logo {
   );
   margin-top: 25px; 
   margin-right: 20px;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
+}
+
+.custom-button {
+  @include button();
+  margin: 25px 15px;
+  padding: 15px 50px; 
+}
+.custom-button-radius {
+  @include button($radius:3px);
+  margin: 25px 15px; 
+  padding: 15px 50px;
+  background: darken($primary-color, 10%)
+} 
+
+.clear-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: $transparent,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:20px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  text-align: center;
+  border: 0;
+}
+
+.text {
+  h2 {margin-top: 20px;}
+  p {margin-top: 50px;}
+}
+span.h1-font {
+  position: absolute;
+  top: 3rem;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: $aluminum;
+}
+
+span.h2-font {
+  position: absolute;
+  top: 7.2rem;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: $aluminum;
+}
+span.p-font {
+  position: absolute;
+  top: 15.4rem;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: $aluminum;
 }
 
 .footer-section {
@@ -78,7 +133,7 @@ img.logo {
     padding-left: 35px;
     color: lighten($oil, 15%);
     &:before {
-      content: "\f000";
+      content: "\f1d8";
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -106,27 +161,7 @@ img.logo {
   }
 }
 
-.clear-panel {
-  @include panel(
-    // Sets the panel background color. Default: $panel-pg
-    $bg: $transparent,
-    // Sets the panel padding amount. Default: $panel-padding
-    $padding:20px,
-    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
-    $adjust:true
-  );
-  text-align: center;
-  border: 0;
-}
 
-// .top-bar-section ul li.active > a {
-//     background: darken($ppblue, 15%) !important;   
-// }
-// .top-bar-section li a:not(.button):hover {
-//     background: $ppblue !important; /*example */
-// }
 
-// .top-bar-section li:not(.has-form) a:not(.button):hover{
-//   background: darken($ppblue, 15%) !important;
-// }
+
 

@@ -122,16 +122,16 @@ $row-width: rem-calc(1200);
 
 $transparent : rgba(0,0,0,0);
 // $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
+$ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
+$smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
+$iron        : #CCCCCC;
 $base        : #AAAAAA;
-// $aluminum    : #999999;
+$aluminum    : #999999;
 // $jumbo       : #888888;
 // $monsoon     : #777777;
 // $steel       : #666666;
@@ -207,12 +207,12 @@ $oil         : #333333;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+$h1-font-size: rem-calc(40);
+$h2-font-size: rem-calc(32);
+$h3-font-size: rem-calc(27);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10) !default;
