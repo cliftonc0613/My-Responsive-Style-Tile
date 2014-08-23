@@ -1,0 +1,27 @@
+# Required
+# --------
+
+# Live Server
+scheme: sftp
+host: ctwdsdemos.com
+username: ctwdsdemos
+password: 5FDWQD9DUf
+# Optional
+# --------
+
+# Remote path
+path: public_html/StyleTiles/
+
+# Remote file name in which the current revision is stored
+revision_file: .revision
+
+# These files (from Git) will not be uploaded during a deploy
+exclude:
+    - .gitignore
+    - dandelion_staging.yml
+    - dandelion.yml
+    - package.json
+    - LICENSE
+    - node_modules
+    - task
+    - .sass-cache
