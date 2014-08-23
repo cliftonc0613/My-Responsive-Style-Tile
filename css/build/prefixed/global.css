@@ -8,6 +8,8 @@
  * Correct `block` display not defined in IE 8/9.
  */
 
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
 article,
 aside,
 details,
@@ -476,7 +478,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -1808,7 +1810,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 1rem;
 }
 
@@ -2484,7 +2486,7 @@ button,
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4609,7 +4611,7 @@ kbd {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -5206,7 +5208,7 @@ ul.pagination li {
   color: #eeeeee;
   font-weight: normal;
   font-size: 1rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .pricing-table .price {
@@ -5216,7 +5218,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .pricing-table .description {
@@ -5607,7 +5609,7 @@ dialog::backdrop {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .side-nav li {
@@ -5631,7 +5633,7 @@ dialog::backdrop {
 .side-nav li.active > a:first-child:not(.button) {
   color: #1cc7ff;
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
 .side-nav li.divider {
@@ -5797,7 +5799,7 @@ dialog::backdrop {
   display: inline;
   margin-left: 1rem;
   margin-bottom: 0.625rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -6300,7 +6302,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -6705,7 +6707,7 @@ blockquote p {
   background-color: #efefef;
   color: #222222;
   padding: 1rem 2rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 1rem;
 }
 
@@ -7136,7 +7138,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 15px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   text-transform: none;
@@ -11663,6 +11665,14 @@ th.hide-for-touch {
 
 body {
   background: #eeeeee;
+  font-size: 60%;
+  color: #555555;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*
@@ -11727,7 +11737,7 @@ img.logo {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -11765,7 +11775,7 @@ img.logo {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -11809,7 +11819,7 @@ img.logo {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0);
   margin-bottom: 1.25rem;
-  padding: 20px;
+  padding: 0px;
   background: rgba(0, 0, 0, 0);
   text-align: center;
   border: 0;
@@ -11866,10 +11876,6 @@ img.logo {
 
 .text p {
   margin: 50px 0 10px 0;
-}
-
-.text a {
-  margin: 20px 0 5px 0;
 }
 
 span {
@@ -11933,15 +11939,20 @@ hr.hr-alt {
 }
 
 .learn-links {
-  margin-top: 30px;
+  margin: 30px 0;
   text-align: center;
-  padding: 10px 25px 0 0;
+  padding: 10px 25px 0 15px;
   height: 250px;
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(204, 204, 204, 0.8);
 }
 
 .learn-links h4 {
   margin: 20px 0 0 0;
+}
+
+.learn-links p {
+  margin: 10px 0;
+  line-height: 1.2;
 }
 
 .learn-links ul {
@@ -11953,7 +11964,7 @@ hr.hr-alt {
 }
 
 .learn-links.first {
-  border-left: 0px solid rgba(255, 255, 255, 0.8);
+  border-left: 0px solid rgba(204, 204, 204, 0.8);
 }
 
 .learn-links.first ul {
@@ -11962,4 +11973,42 @@ hr.hr-alt {
 
 .learn-links.first ul li {
   display: block;
+}
+
+.widget-button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: white;
+  border-radius: 3px;
+  -webkit-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  margin: 10px 20px;
+  padding: 10px 50px;
+}
+
+.widget-button:hover,
+.widget-button:focus {
+  background-color: #007095;
+}
+
+.widget-button:hover,
+.widget-button:focus {
+  color: white;
 }

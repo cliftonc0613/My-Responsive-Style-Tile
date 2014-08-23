@@ -14,8 +14,18 @@ $links: #35a8ff;
 
 body {
   background: $smoke;
+  font-size: 60%;
+  color: $charcoal;
 }
 
+#owl-demo .item{
+  // margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /*
    HEADER SECTION
    ========================================================================== */
@@ -84,12 +94,13 @@ img.logo {
   }
 } 
 
+
 .clear-panel {
   @include panel(
     // Sets the panel background color. Default: $panel-pg
     $bg: $transparent,
     // Sets the panel padding amount. Default: $panel-padding
-    $padding:20px,
+    $padding:00px,
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
     $adjust:true
   );
@@ -103,7 +114,7 @@ img.logo {
   h2 {margin-top: 20px;
     margin-bottom: 5px;}
   p {margin: 50px 0 10px 0;}
-  a {margin: 20px 0 5px 0;}
+  // a {margin: 20px 0 5px 0;}
 
 
 }
@@ -174,12 +185,14 @@ hr.hr-alt {
 
 // Wiget Areas
 .learn-links {
-  margin-top: 30px;
+  margin: 30px 0;
   text-align: center;
-  padding: 10px 25px 0 0;
+  padding: 10px 25px 0 15px;
   height:250px;
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
-  h4 {margin: 20px 0 0 0}
+  border-left: 1px solid rgba($iron, .8);
+  h4 {margin: 20px 0 0 0;}
+  p {margin:10px 0;
+  line-height: 1.2;}
   ul {
     margin-left: 0;
     li {
@@ -187,7 +200,7 @@ hr.hr-alt {
     }
   }
   &.first {
-    border-left: 0px solid rgba(255, 255, 255, 0.8);
+    border-left: 0px solid rgba($iron, .8);
     ul {
       margin-left: 0;
       li {
@@ -195,8 +208,14 @@ hr.hr-alt {
       }
     }
   }
-}
 
+}
+.widget-button {
+  @include button($radius:3px);
+  margin: 10px 20px;
+  padding: 10px 50px;
+
+}
 
 
 
