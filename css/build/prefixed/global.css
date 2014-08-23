@@ -11987,6 +11987,7 @@ hr.hr-alt {
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
+  -webkit-border-radius: 0;
   display: inline-block;
   padding-top: 1rem;
   padding-right: 2rem;
@@ -11996,11 +11997,10 @@ hr.hr-alt {
   background-color: #008cba;
   border-color: #007095;
   color: white;
-  border-radius: 3px;
   -webkit-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
   margin: 10px 20px;
-  padding: 10px 50px;
+  padding: 5px 50px;
 }
 
 .widget-button:hover,
