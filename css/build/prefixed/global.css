@@ -11723,9 +11723,9 @@ img.logo {
   max-width: 100%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   margin-top: 25px;
-  margin-right: 20px;
-  height: 90px;
-  width: 90px;
+  margin-right: 11px;
+  height: 105px;
+  width: 105px;
 }
 
 .texture-blocks:hover,
@@ -11885,6 +11885,7 @@ span {
 }
 
 .footer-section {
+  font-size: 10px;
   margin-top: 20px;
   padding: 20px 0;
   background: #333333;
@@ -11910,7 +11911,7 @@ span {
   font-size: 18px;
   padding-right: 0.5em;
   position: absolute;
-  top: 0px;
+  top: 8px;
   left: 0px;
 }
 
@@ -11923,8 +11924,8 @@ span {
 }
 
 .footer-section p {
-  font-size: 15px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 hr.hr-alt {
@@ -11939,6 +11940,7 @@ hr.hr-alt {
 }
 
 .learn-links {
+  font-size: 1rem;
   margin: 30px 0;
   text-align: center;
   padding: 10px 25px 0 15px;
@@ -11953,6 +11955,8 @@ hr.hr-alt {
 .learn-links p {
   margin: 10px 0;
   line-height: 1.2;
+  font-size: .87rem;
+  font-weight: 800;
 }
 
 .learn-links ul {
@@ -12011,4 +12015,43 @@ hr.hr-alt {
 .widget-button:hover,
 .widget-button:focus {
   color: white;
+}
+
+@media only screen and (max-width: 40em) {
+  .learn-links {
+    margin: 30px 0;
+    text-align: center;
+    padding: 10px 25px 0 15px;
+    height: 250px;
+    border-left: 0px solid rgba(204, 204, 204, 0.8);
+  }
+
+  .learn-links h4 {
+    margin: 20px 0 0 0;
+  }
+
+  .learn-links p {
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+
+  .learn-links ul {
+    margin-left: 0;
+  }
+
+  .learn-links ul li {
+    display: block;
+  }
+
+  .learn-links.first {
+    border-left: 0px solid rgba(204, 204, 204, 0.8);
+  }
+
+  .learn-links.first ul {
+    margin-left: 0;
+  }
+
+  .learn-links.first ul li {
+    display: block;
+  }
 }
