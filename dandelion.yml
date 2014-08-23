@@ -3,14 +3,14 @@
 
 # Live Server
 scheme: sftp
-host: ctwdsdemos.com
-username: cliftonc0613
-password: cu_tigers~13
+host: styletile.ctwdsdemos.com
+username: styletile
+password: Tigers~13!
 # Optional
 # --------
 
 # Remote path
-path: public_html/StyleTiles
+path: public_html/
 
 # Remote file name in which the current revision is stored
 revision_file: .revision
