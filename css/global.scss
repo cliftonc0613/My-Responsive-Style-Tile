@@ -211,9 +211,9 @@ hr.hr-alt {
 
 }
 .widget-button {
-  @include button($radius:3px);
+  @include button();
   margin: 10px 20px;
-  padding: 10px 50px;
+  padding: 5px 50px;
 
 }
 

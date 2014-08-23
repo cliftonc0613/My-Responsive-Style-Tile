@@ -10109,10 +10109,9 @@ hr.hr-alt {
   background-color: #008cba;
   border-color: #007095;
   color: white;
-  border-radius: 3px;
   transition: background-color 300ms ease-out;
   margin: 10px 20px;
-  padding: 10px 50px;
+  padding: 5px 50px;
 }
 .widget-button:hover, .widget-button:focus {
   background-color: #007095;
