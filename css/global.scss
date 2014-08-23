@@ -2,42 +2,222 @@ $backgroundColor: #eee;
 $spacing: 2rem;
 $links: #35a8ff;
 
+
 @import "libs/normalize";
+@import "libs/foundation/foundation/_settings";
+@import "libs/foundation/foundation";
+// @import "libs/foundation/foundicons";
+@import "libs/font-awesome/font-awesome";
+//http://owlgraphic.com/owlcarousel/
 @import "libs/owl.carousel";
 @import "owl.theme";
 
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background: $backgroundColor;
-  padding: $spacing;
-}
 body {
-  padding: $spacing;
-  background: white;
+  background: $smoke;
+  font-size: 60%;
+  color: $charcoal;
 }
 
-a {
-  color: $links;
-  text-decoration: none;
-  &:hover, &:focus {
-    color: darken($links, 25%);
+#owl-demo .item{
+  // margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*
+   HEADER SECTION
+   ========================================================================== */
+.header-section {
+	margin-bottom: 15px;
+}
+
+
+/*
+   MAIN SECTION
+   ========================================================================== */
+img.logo {
+    width:400px;
+  }
+
+.color-blocks {
+  @include thumb(
+    // Width of border around thumbnail
+    $border-width: 5px,
+    // Box shadow to apply to thumbnail
+    $box-shadow: 0 0 0 1px rgba(#000,.2),
+    // Box shadow to apply on hover
+    $box-shadow-hover: 0 0 6px 1px rgba(#ccc,0.5)
+    
+  );
+  margin-top: 25px; 
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+}
+.blue {
+   background: $primary-color;
+}
+.red {
+  background: red;
+}
+
+.texture-blocks {
+  @include thumb(
+    // Width of border around thumbnail
+    $border-width: 5px,
+    // Box shadow to apply to thumbnail
+    $box-shadow: 0 0 0 1px rgba(#000,.2),
+    // Box shadow to apply on hover
+    $box-shadow-hover: 0 0 6px 1px rgba(#ccc,0.5)
+    
+  );
+  margin-top: 25px; 
+  margin-right: 20px;
+  height: 90px;
+  width: 90px;
+}
+
+.custom-button {
+  @include button();
+  margin: 25px 15px;
+  padding: 15px 50px; 
+}
+.custom-button-radius {
+  @include button($radius:3px);
+  margin: 25px 15px; 
+  padding: 15px 50px;
+  background: darken($primary-color, 10%);
+  &:hover {
+    background: darken($primary-color, 15%);
+  }
+} 
+
+
+.clear-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: $transparent,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:00px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  text-align: center;
+  border: 0;
+}
+
+.text {
+  h1 {margin-top: 20px;
+    margin-bottom: 5px;}
+  h2 {margin-top: 20px;
+    margin-bottom: 5px;}
+  p {margin: 50px 0 10px 0;}
+  // a {margin: 20px 0 5px 0;}
+
+
+}
+span {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: $aluminum;
+  &.h1-font {
+  }
+  &.h2-font {
+  }
+  &.p-font {
+  }
+  &.alink-font {
+    
   }
 }
 
-.moving-box {
-  background: #f06d06;
-  width: 100px;
-  height: 100px;
-  animation: swing 3s ease alternate infinite;
-}
+.footer-section {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: $oil;
+  color: $white;
+  span.title {
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding-left: 35px;
+    color: lighten($oil, 15%);
+    &:before {
+      content: "\f1d8";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+  /*--adjust as necessary--*/
+      color: lighten($oil, 20%);
+      font-size: 18px;
+      padding-right: 0.5em;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  span.blub {
+    display: block;
+    color: lighten($oil, 15%);
+    font-size: 0.75rem;
+    padding-left: 35px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 16px;
 
-// Example of ignoring prefixes
-@keyframes swing {
-  100% {
-    transform: translateX(100px);
   }
 }
+
+hr.hr-alt {
+  margin: 20px 0;
+}
+
+.rotate {
+  -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+}
+
+// Wiget Areas
+.learn-links {
+  margin: 30px 0;
+  text-align: center;
+  padding: 10px 25px 0 15px;
+  height:250px;
+  border-left: 1px solid rgba($iron, .8);
+  h4 {margin: 20px 0 0 0;}
+  p {margin:10px 0;
+  line-height: 1.2;}
+  ul {
+    margin-left: 0;
+    li {
+      display: block;
+    }
+  }
+  &.first {
+    border-left: 0px solid rgba($iron, .8);
+    ul {
+      margin-left: 0;
+      li {
+        display: block;
+      }
+    }
+  }
+
+}
+.widget-button {
+  @include button($radius:3px);
+  margin: 10px 20px;
+  padding: 10px 50px;
+
+}
+
+
+
+
+

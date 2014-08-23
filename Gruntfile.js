@@ -59,6 +59,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer', 'cssmin']);
 
   // Moved to the tasks folder:
-  // grunt.registerTask('dev', ['connect', 'watch']);
+  grunt.registerTask('dev', ['connect', 'watch']);
 
 };

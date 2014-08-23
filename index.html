@@ -5,33 +5,193 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Example Project</title>
+  <title>Responsive Style Tile</title>
 
   <link rel="stylesheet" href="css/build/minified/global.css">
 </head>
 
 <body>
+<!-- HEADER SECTION -->
+<div class="contain-to-grid header-section sticky">
+  <!-- TOPBAR SECTION -->
+ <nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"><strong><em>Responsive Style Tile</em></strong></a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
 
-  <h1>Chris' Grunt Boilerplate <a href="https://github.com/chriscoyier/My-Grunt-Boilerplate">☮</a></h1>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
 
-  <p>This is a jQuery plugin (<a href="http://owlgraphic.com/owlcarousel/">Owl Carousel</a>) to illustrate dependancies in JS and CSS.</p>
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <!-- <li><a href="#">Style Version #1</a></li> -->
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
+</div> <!-- END HEADER SECTION
+ 
+<!-- CONTENT FILL WHEN SCROLL = 0 -->
+<div class="header-fill"></div>
+ 
+<!-- CONTENT SECTION -->
+<div class="row content-section">
+    <div class="main-content">
+        <div class="small-12 medium-12 large-1 columns">
+          <a class="color-blocks red" href="#"></a> 
+          <a class="color-blocks blue" href="#"></a> 
+          <a class="color-blocks red" href="#"></a> 
+          <a class="color-blocks blue" href="#"></a> 
+          <a class="color-blocks red" href="#"></a> 
+          <a class="color-blocks blue" href="#"></a> 
+        </div>
 
-  <div id="owl-demo" class="owl-carousel">
-    <div class="item"><img src="images/home-carousel/owl1.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl2.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl3.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl4.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl5.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl6.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl7.jpg" alt="Owl Image"></div>
-    <div class="item"><img src="images/home-carousel/owl8.jpg" alt="Owl Image"></div>
-  </div>
+        <div class="small-12 medium-4 large-5 columns">
+            <div class="clear-panel"><h1><img class="logo" src="images/CTWDlogo-lg.png"></h1></div>
+            <div id="owl-demo">                  
+              <div class="item"><img src="images/home-carousel/owl1.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl2.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl3.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl4.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl5.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl6.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl7.jpg" alt="Owl Image"></div>
+              <div class="item"><img src="images/home-carousel/owl8.jpg" alt="Owl Image"></div>
+             
+            </div>
+          <a class="texture-blocks blue" href="#"></a>
+          <a class="texture-blocks red" href="#"></a> 
+          <a class="texture-blocks blue" href="#"></a> 
+          <a class="texture-blocks red" href="#"></a> <br/>
+          <a><a href="#" class="custom-button">Default Button</a>
+          <a><a href="#" class="custom-button-radius">Radius  Button</a>
+          <p><i class="fa fa-quote-left fa-2x pull-left"></i>
+...tomorrow we will run faster, stretch out our arms farther...
+And then one fine morning— So we beat on, boats against the
+current, borne back ceaselessly into the past.</p>
+        </div>
+        <div class="small-12 medium-4 large-6 columns">
+            <div class="text">
+              <h1>Example of a Header<small>(H1)</small></h1>
+              <span class="h1-font">Font: Name #hexcode</span>
+              <h2>Example of a Sub Header<small>(H2)</small></h2>
+              <span class="h2-font">Font: Name #hexcode</span>
+              <p>Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <span class="p-font">Font: Name #hexcode</span><br/>
+              <p><a class="link" href="#">This is an example text link <i class="fa fa-angle-double-right"></i></a><br/>
+              <span class="alink-font">Font: Name #hexcode</span></p>
 
-  <p>This is a box moving with CSS @keyframes and transforms, to illustrate prefixing.</p>
-  <div class="moving-box"></div>
+              <div class="row collapse">
+                <!-- <div class="medium-6 columns">
+                  <div class="learn-links first">
+                    <i class="fa fa-paper-plane-o fa-3x"></i><br/>
+                    <h4 class="">Want more?</h4>
+                    <ul>
+                      <li><a href="#">Foundation Business</a></li>
+                      <li><a href="#">Responsive</a></li>
+                      
+                      <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor.</li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- <div class="medium-12 columns">
+                  <div class="learn-links">
+                    <i class="fa fa-align-justify fa-3x"></i><br/>
+                    <h4 class="">Side Navigation</h4>
+                      <ul class="side-nav" role="navigation" title="Link List">
+                         <li role="menuitem"><a href="#">Link 1</a></li>
+                         <li role="menuitem"><a href="#">Link 2</a></li>
+                         <li role="menuitem"><a href="#">Link 3</a></li>
+                         <li role="menuitem"><a href="#">Link 4</a></li>
+                      </ul>
+                  </div>
+                </div> -->
+              </div>
 
+              <div class="row collapse">
+                <hr class="hr-alt">
+                <div class="medium-6 columns">
+                  <div class="learn-links first">
+                    <i class="fa fa-paper-plane-o fa-3x"></i><br/>
+                    <h4 class="">Want more?</h4>  
+                      <p>This Style Tile is built with <a href="http://foundation.zurb.com" target="_blank">Foundation 5 Framework</a>.</p>
+                    </ul>
+                  </div>
+                </div>
+                <div class="medium-6 columns">
+                  <div class="learn-links">
+                    <i class="fa fa-bullhorn fa-3x rotate"></i><br/>
+                    <h4 class="">Talk to us</h4>
+                      <p>Tweet us at <a href="http://twitter.com/cliftoncanady">@cliftoncanady</a></p>
+                      <p>Email us at <a href="mailto:hello@ctwebdesignshop.com">hello@ctwebdesignshop.com</a></p>
+                      <a href="#" class="widget-button radius">Default Button</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- END CONTENT SECTION -->
+ 
+<!-- FOOTER SECTION -->
+<div class="footer-section">
+    <div class="row">
+      <div class="small-12 medium-3 large-3 columns">
+        <a href="#"><br>
+          <span class="title">Foundation</span><br>
+          <span class="blub">The most advanced front-end framework in the world.</span><br>
+        </a>
+      </div>
+      <div class="small-12 medium-3 large-3 columns">
+        <a href="#"><br>
+          <span class="title">Foundation</span><br>
+          <span class="blub">The most advanced front-end framework in the world.</span><br>
+        </a>
+      </div>
+      <div class="small-12 medium-3 large-3 columns">
+         <a href="#"><br>
+          <span class="title">Foundation</span><br>
+          <span class="blub">The most advanced front-end framework in the world.</span><br>
+        </a>
+      </div>
+      <div class="small-12 medium-3 large-3 columns">
+          <a href="#"><br>
+          <span class="title">Foundation</span><br>
+          <span class="blub">The most advanced front-end framework in the world.</span><br>
+        </a>
+      </div>
+      <div class="row">
+          <div class="small-12 medium-3 large-8 columns">
+            <p>&copy; Copyright 2014</p>
+          </div>
+          <div class="small-12 medium-3 large-4 columns">
+            <ul class="inline-list">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+              <li><a href="#">Link 5</a></li>
+            </ul>
+          </div>
+      </div> <!--  -->
+    </div>
+</div> <!-- END FOOTER SECTION -->
   <script src="js/build/production.min.js"></script>
-
 </body>
 
 </html>

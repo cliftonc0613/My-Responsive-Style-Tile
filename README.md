@@ -1,4 +1,4 @@
-My-Grunt-Boilerplate
-====================
+My-Responsiv-Style-Tyle
+==========================
 
-This repo covers what we did in [this screencast](http://css-tricks.com/video-screencasts/130-first-moments-grunt/ "screencast"), plus a bit more.
+This is a repo for my style style that I creating with [Zurb Foundation 5](http://foundation.zurb.com/ "Zurb Foundation 5"), plus a bit more.
