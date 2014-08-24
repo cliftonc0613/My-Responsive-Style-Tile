@@ -1,6 +1,8 @@
 My-Responsiv-Style-Tyle
 ==========================
 
+![alt tag](https://raw.github.com/cliftonc0613/My-Responsive-Style-Tile/master/images/ResponsiveStyleTiles.jpg)
+
 This is a repo for my style style that I creating with [Zurb Foundation 5](http://foundation.zurb.com/ "Zurb Foundation 5"), plus a bit more.
 
 **http://responsivestyletil.es/** is a website design starter tool. I got the inspiration from Samantha Warrens [styletil.es](http://styletil.es/).
