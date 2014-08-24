@@ -228,7 +228,17 @@ span {
   &.alink-font {
     
   }
+  &.social {
+    color: $jumbo;
+  }
+  &.social-header {
+    color: $jumbo;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 }
+
+
 /*
 ** Wiget Areas Blocks 
 **-------------------------------------------------------------------*/

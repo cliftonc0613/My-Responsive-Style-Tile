@@ -10091,6 +10091,14 @@ span {
   margin-bottom: 20px;
   color: #999999;
 }
+span.social {
+  color: #888888;
+}
+span.social-header {
+  color: #888888;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
 
 /*
 ** Wiget Areas Blocks 
