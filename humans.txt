@@ -15,11 +15,12 @@ Location: Greenville,SC USA.
 # THANKS
 
  Name: Samantha Warrens -- @samanthatoy 
+ Name: Chris Coyier -- @chriscoyier 
 
 /* SITE */
 
                             
 Last update: 2014/08/24                           
 Standards: HTML5, CSS3,..                    
-Components: Zurb Foundation 5, Font Awesome, Modernizr, jQuery, etc.                          
-Software: Software used for the development
+Components:  Zurb Foundation 5, Font Awesome, Modernizr, jQuery                     
+Software: GruntJS, SASS
