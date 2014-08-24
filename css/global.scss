@@ -8,9 +8,36 @@ $links: #35a8ff;
 @import "libs/foundation/foundation";
 // @import "libs/foundation/foundicons";
 @import "libs/font-awesome/font-awesome";
-//http://owlgraphic.com/owlcarousel/
+// http://owlgraphic.com/owlcarousel/
 @import "libs/owl.carousel";
 @import "owl.theme";
+
+
+
+/*
+   Custom Mixins
+   ========================================================================== */
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+ }
+
+$deg: -30deg;
+
+.rotate {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
 
 body {
   background: $smoke;
@@ -18,29 +45,39 @@ body {
   color: $charcoal;
 }
 
-#owl-demo .item{
-  // margin: 3px;
+hr.hr-alt {
+  margin: 20px 0;
 }
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
+
+/*
+** clear custom panel 
+**-------------------------------------------------------------------*/
+.clear-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: $transparent,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:00px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+  text-align: center;
+  border: 0;
 }
+
 /*
    HEADER SECTION
    ========================================================================== */
 .header-section {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-
 /*
-   MAIN SECTION
+   Color Blocks
    ========================================================================== */
-img.logo {
-    width:400px;
-  }
-
+/*
+** Color Block Squares 
+**-------------------------------------------------------------------*/
 .color-blocks {
   @include thumb(
     // Width of border around thumbnail
@@ -56,12 +93,61 @@ img.logo {
   height: 60px;
   width: 60px;
 }
-.blue {
+/*
+** Color Block Colors
+**-------------------------------------------------------------------*/
+.cb-1 {
    background: $primary-color;
 }
-.red {
-  background: red;
+.cb-2 {
+  background: darken($primary-color, 5%);
 }
+.cb-3 {
+   background: darken($primary-color, 10%);
+}
+.cb-4 {
+  background: darken($primary-color, 15%);
+}
+.cb-5 {
+   background: darken($primary-color, 20%);
+}
+.cb-6 {
+  background: darken($primary-color, 25%);
+}
+
+
+/*
+   Logo and Slider
+   ========================================================================== */
+/*
+** Logo 
+**-------------------------------------------------------------------*/
+img.logo {
+    width:400px;
+  }
+
+/*
+** OWL Carousel
+** Touch enabled jQuery plugin that lets you create beautiful responsive
+** carousel slider. 
+** Website documentation: http://owlgraphic.com/owlcarousel/index.html 
+**-------------------------------------------------------------------*/
+#owl-demo .item{
+  // margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/*
+   Text Block and Default Buttons
+   ========================================================================== */
+/*
+** Text Block Squares
+**-------------------------------------------------------------------*/
 
 .texture-blocks {
   @include thumb(
@@ -74,11 +160,32 @@ img.logo {
     
   );
   margin-top: 25px; 
-  margin-right: 11px;
+  margin-right: 5px;
   height: 105px;
   width: 105px;
+  &.first {
+    margin-left: 5px;
+  }
+}
+/*
+** Texture Block Textures
+**-------------------------------------------------------------------*/
+.tb-1 {
+   background: $primary-color;
+}
+.tb-2 {
+  background: darken($primary-color, 5%);
+}
+.tb-3 {
+   background: darken($primary-color, 10%);
+}
+.tb-4 {
+  background: darken($primary-color, 15%);
 }
 
+/*
+** Default Buttons 
+**-------------------------------------------------------------------*/
 .custom-button {
   @include button();
   margin: 25px 15px;
@@ -94,21 +201,7 @@ img.logo {
   }
 } 
 
-
-.clear-panel {
-  @include panel(
-    // Sets the panel background color. Default: $panel-pg
-    $bg: $transparent,
-    // Sets the panel padding amount. Default: $panel-padding
-    $padding:00px,
-    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
-    $adjust:true
-  );
-  text-align: center;
-  border: 0;
-}
-
-.text {
+.content {
   h1 {margin-top: 20px;
     margin-bottom: 5px;}
   h2 {margin-top: 20px;
@@ -116,8 +209,10 @@ img.logo {
   p {margin: 50px 0 10px 0;}
   // a {margin: 20px 0 5px 0;}
 
-
 }
+/*
+** Font Type : Font: Name #hexcode 
+**-------------------------------------------------------------------*/
 span {
     font-size: 15px;
     margin-bottom: 20px;
@@ -132,7 +227,54 @@ span {
     
   }
 }
+/*
+** Wiget Areas Blocks 
+**-------------------------------------------------------------------*/
+.learn-links {
+  font-size: 1rem;
+  margin: 30px 0;
+  text-align: center;
+  padding: 10px 25px 0 15px;
+  height:250px;
+  border-left: 1px solid rgba($iron, .8);
+  // font-family: sans-serif;
+  h4 {margin: 20px 0 0 0;}
+  p {margin:10px 0;
+  line-height: 1.2;
+  font-size: .87rem;
+  font-weight: 800;
+  }
+  ul {
+    margin-left: 0;
+    li {
+      display: block;
+    }
+  }
+  //This .first class takes the left border disapear 
+  &.first {
+    border-left: 0px solid rgba($iron, .8);
+    ul {
+      margin-left: 0;
+      li {
+        display: block;
+      }
+    }
+  }
 
+}
+/*
+** Wiget Areas Buttons 
+**-------------------------------------------------------------------*/
+.widget-button {
+  @include button();
+  margin: 10px 20px;
+  padding: 5px 50px;
+
+}
+
+/*
+   Footer and Footer Widgets
+   ========================================================================== */
 .footer-section {
   font-size: 10px;
   margin-top: 20px;
@@ -174,57 +316,15 @@ span {
 
 }
 
-hr.hr-alt {
-  margin: 20px 0;
-}
 
-.rotate {
-  -ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
-    transform: rotate(-30deg);
-}
 
-// Wiget Areas
-.learn-links {
-  font-size: 1rem;
-  margin: 30px 0;
-  text-align: center;
-  padding: 10px 25px 0 15px;
-  height:250px;
-  border-left: 1px solid rgba($iron, .8);
-  // font-family: sans-serif;
-  h4 {margin: 20px 0 0 0;}
-  p {margin:10px 0;
-  line-height: 1.2;
-  font-size: .87rem;
-  font-weight: 800;
-  }
-  ul {
-    margin-left: 0;
-    li {
-      display: block;
-    }
-  }
-  &.first {
-    border-left: 0px solid rgba($iron, .8);
-    ul {
-      margin-left: 0;
-      li {
-        display: block;
-      }
-    }
-  }
-
-}
-.widget-button {
-  @include button();
-  margin: 10px 20px;
-  padding: 5px 50px;
-
-}
-
+/*
+   Media Queries
+   ========================================================================== */
 @media #{$small-only} { 
-  // Wiget Areas
+/*
+** Wiget Areas Blocks 
+**-------------------------------------------------------------------*/
   .learn-links {
     margin: 30px 0;
     text-align: center;
