@@ -9826,16 +9826,55 @@ th.hide-for-touch {
   background: url(AjaxLoader.gif) no-repeat center center;
 }
 
+/*
+   Custom Mixins
+   ========================================================================== */
+.rotate {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
 body {
   background: #eeeeee;
   font-size: 60%;
   color: #555555;
 }
 
-#owl-demo .item img {
-  display: block;
-  width: 100%;
-  height: auto;
+hr.hr-alt {
+  margin: 20px 0;
+}
+
+/*
+** clear custom panel 
+**-------------------------------------------------------------------*/
+.clear-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0);
+  margin-bottom: 1.25rem;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0);
+  text-align: center;
+  border: 0;
+}
+.clear-panel > :first-child {
+  margin-top: 0;
+}
+.clear-panel > :last-child {
+  margin-bottom: 0;
+}
+.clear-panel h1, .clear-panel h2, .clear-panel h3, .clear-panel h4, .clear-panel h5, .clear-panel h6, .clear-panel p, .clear-panel li, .clear-panel dl {
+  color: white;
+}
+.clear-panel h1, .clear-panel h2, .clear-panel h3, .clear-panel h4, .clear-panel h5, .clear-panel h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+.clear-panel h1.subheader, .clear-panel h2.subheader, .clear-panel h3.subheader, .clear-panel h4.subheader, .clear-panel h5.subheader, .clear-panel h6.subheader {
+  line-height: 1.4;
 }
 
 /*
@@ -9846,12 +9885,11 @@ body {
 }
 
 /*
-   MAIN SECTION
+   Color Blocks
    ========================================================================== */
-img.logo {
-  width: 400px;
-}
-
+/*
+** Color Block Squares 
+**-------------------------------------------------------------------*/
 .color-blocks {
   line-height: 0;
   display: inline-block;
@@ -9867,14 +9905,61 @@ img.logo {
   box-shadow: 0 0 6px 1px rgba(204, 204, 204, 0.5);
 }
 
-.blue {
+/*
+** Color Block Colors
+**-------------------------------------------------------------------*/
+.cb-1 {
   background: #008cba;
 }
 
-.red {
-  background: red;
+.cb-2 {
+  background: #0079a1;
 }
 
+.cb-3 {
+  background: #006687;
+}
+
+.cb-4 {
+  background: #00526e;
+}
+
+.cb-5 {
+  background: #003f54;
+}
+
+.cb-6 {
+  background: #002c3a;
+}
+
+/*
+   Logo and Slider
+   ========================================================================== */
+/*
+** Logo 
+**-------------------------------------------------------------------*/
+img.logo {
+  width: 400px;
+}
+
+/*
+** OWL Carousel
+** Touch enabled jQuery plugin that lets you create beautiful responsive
+** carousel slider. 
+** Website documentation: http://owlgraphic.com/owlcarousel/index.html 
+**-------------------------------------------------------------------*/
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+   Text Block and Default Buttons
+   ========================================================================== */
+/*
+** Text Block Squares
+**-------------------------------------------------------------------*/
 .texture-blocks {
   line-height: 0;
   display: inline-block;
@@ -9882,14 +9967,39 @@ img.logo {
   max-width: 100%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   margin-top: 25px;
-  margin-right: 11px;
+  margin-right: 5px;
   height: 105px;
   width: 105px;
 }
 .texture-blocks:hover, .texture-blocks:focus {
   box-shadow: 0 0 6px 1px rgba(204, 204, 204, 0.5);
 }
+.texture-blocks.first {
+  margin-left: 5px;
+}
 
+/*
+** Texture Block Textures
+**-------------------------------------------------------------------*/
+.tb-1 {
+  background: #008cba;
+}
+
+.tb-2 {
+  background: #0079a1;
+}
+
+.tb-3 {
+  background: #006687;
+}
+
+.tb-4 {
+  background: #00526e;
+}
+
+/*
+** Default Buttons 
+**-------------------------------------------------------------------*/
 .custom-button {
   border-style: solid;
   border-width: 0px;
@@ -9961,51 +10071,102 @@ img.logo {
   background: #00526e;
 }
 
-.clear-panel {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0);
-  margin-bottom: 1.25rem;
-  padding: 0px;
-  background: rgba(0, 0, 0, 0);
-  text-align: center;
-  border: 0;
-}
-.clear-panel > :first-child {
-  margin-top: 0;
-}
-.clear-panel > :last-child {
-  margin-bottom: 0;
-}
-.clear-panel h1, .clear-panel h2, .clear-panel h3, .clear-panel h4, .clear-panel h5, .clear-panel h6, .clear-panel p, .clear-panel li, .clear-panel dl {
-  color: white;
-}
-.clear-panel h1, .clear-panel h2, .clear-panel h3, .clear-panel h4, .clear-panel h5, .clear-panel h6 {
-  line-height: 1;
-  margin-bottom: 0.625rem;
-}
-.clear-panel h1.subheader, .clear-panel h2.subheader, .clear-panel h3.subheader, .clear-panel h4.subheader, .clear-panel h5.subheader, .clear-panel h6.subheader {
-  line-height: 1.4;
-}
-
-.text h1 {
+.content h1 {
   margin-top: 20px;
   margin-bottom: 5px;
 }
-.text h2 {
+.content h2 {
   margin-top: 20px;
   margin-bottom: 5px;
 }
-.text p {
+.content p {
   margin: 50px 0 10px 0;
 }
 
+/*
+** Font Type : Font: Name #hexcode 
+**-------------------------------------------------------------------*/
 span {
   font-size: 15px;
   margin-bottom: 20px;
   color: #999999;
 }
 
+/*
+** Wiget Areas Blocks 
+**-------------------------------------------------------------------*/
+.learn-links {
+  font-size: 1rem;
+  margin: 30px 0;
+  text-align: center;
+  padding: 10px 25px 0 15px;
+  height: 250px;
+  border-left: 1px solid rgba(204, 204, 204, 0.8);
+}
+.learn-links h4 {
+  margin: 20px 0 0 0;
+}
+.learn-links p {
+  margin: 10px 0;
+  line-height: 1.2;
+  font-size: .87rem;
+  font-weight: 800;
+}
+.learn-links ul {
+  margin-left: 0;
+}
+.learn-links ul li {
+  display: block;
+}
+.learn-links.first {
+  border-left: 0px solid rgba(204, 204, 204, 0.8);
+}
+.learn-links.first ul {
+  margin-left: 0;
+}
+.learn-links.first ul li {
+  display: block;
+}
+
+/*
+** Wiget Areas Buttons 
+**-------------------------------------------------------------------*/
+.widget-button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: white;
+  transition: background-color 300ms ease-out;
+  margin: 10px 20px;
+  padding: 5px 50px;
+}
+.widget-button:hover, .widget-button:focus {
+  background-color: #007095;
+}
+.widget-button:hover, .widget-button:focus {
+  color: white;
+}
+
+/*
+   Footer and Footer Widgets
+   ========================================================================== */
 .footer-section {
   font-size: 10px;
   margin-top: 20px;
@@ -10046,85 +10207,13 @@ span {
   line-height: 1rem;
 }
 
-hr.hr-alt {
-  margin: 20px 0;
-}
-
-.rotate {
-  -ms-transform: rotate(-30deg);
-  /* IE 9 */
-  -webkit-transform: rotate(-30deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(-30deg);
-}
-
-.learn-links {
-  font-size: 1rem;
-  margin: 30px 0;
-  text-align: center;
-  padding: 10px 25px 0 15px;
-  height: 250px;
-  border-left: 1px solid rgba(204, 204, 204, 0.8);
-}
-.learn-links h4 {
-  margin: 20px 0 0 0;
-}
-.learn-links p {
-  margin: 10px 0;
-  line-height: 1.2;
-  font-size: .87rem;
-  font-weight: 800;
-}
-.learn-links ul {
-  margin-left: 0;
-}
-.learn-links ul li {
-  display: block;
-}
-.learn-links.first {
-  border-left: 0px solid rgba(204, 204, 204, 0.8);
-}
-.learn-links.first ul {
-  margin-left: 0;
-}
-.learn-links.first ul li {
-  display: block;
-}
-
-.widget-button {
-  border-style: solid;
-  border-width: 0px;
-  cursor: pointer;
-  font-family: "Roboto Condensed", Arial, sans-serif;
-  font-weight: normal;
-  line-height: normal;
-  margin: 0 0 1.25rem;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  display: inline-block;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
-  font-size: 1rem;
-  background-color: #008cba;
-  border-color: #007095;
-  color: white;
-  transition: background-color 300ms ease-out;
-  margin: 10px 20px;
-  padding: 5px 50px;
-}
-.widget-button:hover, .widget-button:focus {
-  background-color: #007095;
-}
-.widget-button:hover, .widget-button:focus {
-  color: white;
-}
-
+/*
+   Media Queries
+   ========================================================================== */
 @media only screen and (max-width: 40em) {
+  /*
+  ** Wiget Areas Blocks 
+  **-------------------------------------------------------------------*/
   .learn-links {
     margin: 30px 0;
     text-align: center;
