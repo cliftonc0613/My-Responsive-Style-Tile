@@ -17123,4 +17123,11 @@ $(document).on('close.fndtn.alert-box', function(event) {
 });
 
 
+$("#slider").animatedScroll(
+  {
+    duration: 'slow', 
+    easing: 'swing'
+  }
+);
+
 
