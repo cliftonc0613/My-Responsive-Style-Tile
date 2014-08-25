@@ -113,13 +113,19 @@ $body-font-family: 'Roboto Condensed', Arial, sans-serif;
 // $opposite-direction: right;
 // $default-float: left;
 
+//Custom ProPod Colors 
+$blue: rgba(56,85,107,1);
+$green: rgba(200,218,48,1);
+
 // We use these as default colors throughout
-// $primary-color: #2ba6cb;
-// $secondary-color: #e7e7e7;
+$primary-color: $blue;
+$secondary-color: $green;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+
+
 
 $transparent : rgba(0,0,0,0);
 // $white       : #FFFFFF;
@@ -1358,11 +1364,11 @@ $h6-font-size: 1rem;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: lighten($primary-color, 15%);
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 60px;
+$topbar-height: 60px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar

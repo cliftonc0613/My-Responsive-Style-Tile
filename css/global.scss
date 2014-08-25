@@ -50,6 +50,9 @@ body {
 hr.hr-alt {
   margin: 20px 0;
 }
+img.logo {
+  width: 200px;
+}
 
 /*
 ** clear custom panel 
@@ -124,9 +127,7 @@ hr.hr-alt {
 /*
 ** Logo 
 **-------------------------------------------------------------------*/
-img.logo {
-    width:400px;
-  }
+
 
 /*
 ** OWL Carousel
@@ -246,7 +247,7 @@ span {
   font-size: 1rem;
   margin: 30px 0;
   text-align: center;
-  padding: 10px 25px 0 15px;
+  padding: 00px 25px 0 50px;
   height:250px;
   border-left: 1px solid rgba($iron, .8);
   // font-family: sans-serif;
@@ -283,6 +284,15 @@ span {
   padding: 5px 50px;
 
 }
+.lp-widget-button {
+  @include button();
+  margin: 10px 20px;
+  padding: 8px 35px;
+  background: lighten($primary-color, 10%);
+  &:hover {
+    background: darken($primary-color, 5%);
+  }
+}
 
 /*
    Footer and Footer Widgets
@@ -291,14 +301,55 @@ span {
   font-size: 10px;
   margin-top: 20px;
   padding: 20px 0;
-  background: $oil;
+  background: lighten($primary-color, 15%);
   color: $white;
   span.title {
     position: relative;
     font-size: 1rem;
     margin-bottom: 5px;
     padding-left: 35px;
+    color: lighten($primary-color, 35%);
+    &:before {
+      content: "\f1d8";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+  /*--adjust as necessary--*/
+      color: lighten($primary-color, 10%);
+      font-size: 18px;
+      padding-right: 0.5em;
+      position: absolute;
+      top: 8px;
+      left: 0px;
+    }
+  }
+  span.blub {
+    display: block;
+    color: lighten($primary-color, 35%);
+    font-size: 0.75rem;
+    padding-left: 35px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+}
+.features-section {
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 20px 0;
+  color: $white;
+  margin-bottom: 15px;
+  span.title {
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding-left: 35px;
     color: lighten($oil, 15%);
+    font-weight: 800;
     &:before {
       content: "\f1d8";
       font-family: FontAwesome;
@@ -317,7 +368,7 @@ span {
   span.blub {
     display: block;
     color: lighten($oil, 15%);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     padding-left: 35px;
     line-height: 18px;
   }
@@ -329,10 +380,19 @@ span {
 }
 
 
-
 /*
    Media Queries
    ========================================================================== */
+@media #{$medium-only} {
+
+  .lp-widget-button {
+    @include button();
+    margin: 10px 20px;
+    padding: 8px 35px;
+    display:none
+  }
+
+}
 @media #{$small-only} { 
 /*
 ** Wiget Areas Blocks 
