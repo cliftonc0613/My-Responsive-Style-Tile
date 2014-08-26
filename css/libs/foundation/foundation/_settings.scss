@@ -1364,7 +1364,7 @@ $h6-font-size: 1rem;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: lighten($primary-color, 15%);
+$topbar-bg-color: $primary-color;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1376,7 +1376,7 @@ $topbar-height: 60px;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
+$topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-bg: $oil
 // $topbar-dropdown-link-weight: $font-weight-normal;

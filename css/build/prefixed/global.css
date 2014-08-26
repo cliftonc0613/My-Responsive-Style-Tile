@@ -6943,7 +6943,7 @@ meta.foundation-mq-topbar {
 
 .contain-to-grid {
   width: 100%;
-  background: #527d9d;
+  background: #38556b;
 }
 
 .contain-to-grid .top-bar {
@@ -6981,7 +6981,7 @@ meta.foundation-mq-topbar {
   height: 60px;
   line-height: 60px;
   position: relative;
-  background: #527d9d;
+  background: #38556b;
   margin-bottom: 0;
 }
 
@@ -7092,7 +7092,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar.expanded .title-area {
-  background: #527d9d;
+  background: #38556b;
 }
 
 .top-bar.expanded .toggle-topbar a {
@@ -7122,14 +7122,14 @@ meta.foundation-mq-topbar {
 
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #293e4f;
+  border-top: solid 1px #1c2b35;
   clear: both;
   height: 1px;
   width: 100%;
 }
 
 .top-bar-section ul li {
-  background: #333333;
+  background: #38556b;
 }
 
 .top-bar-section ul li > a {
@@ -7406,7 +7406,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #527d9d;
+    background: #38556b;
     overflow: visible;
   }
 
@@ -7441,7 +7441,7 @@ meta.foundation-mq-topbar {
   }
 
   .top-bar.expanded {
-    background: #527d9d;
+    background: #38556b;
   }
 
   .contain-to-grid .top-bar {
@@ -7479,7 +7479,7 @@ meta.foundation-mq-topbar {
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 20px;
     line-height: 60px;
-    background: #527d9d;
+    background: #38556b;
   }
 
   .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -7588,14 +7588,14 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #658eae;
+    border-right: solid 1px #476d89;
     clear: none;
     height: 60px;
     width: 0;
   }
 
   .top-bar-section .has-form {
-    background: #527d9d;
+    background: #38556b;
     padding: 0 20px;
     height: 60px;
   }
@@ -11686,6 +11686,10 @@ img.logo {
   width: 200px;
 }
 
+img.rst {
+  width: 100%;
+}
+
 /*
 ** clear custom panel 
 **-------------------------------------------------------------------*/
@@ -12101,7 +12105,7 @@ span.social-header {
   -webkit-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
   margin: 10px 20px;
-  padding: 8px 35px;
+  padding: 8px 30px;
   background: #4a708c;
 }
 

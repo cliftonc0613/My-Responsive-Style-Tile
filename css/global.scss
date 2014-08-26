@@ -50,8 +50,13 @@ body {
 hr.hr-alt {
   margin: 20px 0;
 }
-img.logo {
+img {
+  &.logo {
   width: 200px;
+  }
+  &.rst {
+    width:100%;
+  }
 }
 
 /*
@@ -287,7 +292,7 @@ span {
 .lp-widget-button {
   @include button();
   margin: 10px 20px;
-  padding: 8px 35px;
+  padding: 8px 30px;
   background: lighten($primary-color, 10%);
   &:hover {
     background: darken($primary-color, 5%);

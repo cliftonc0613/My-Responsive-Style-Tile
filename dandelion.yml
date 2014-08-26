@@ -10,7 +10,7 @@ password: Tigers~13!
 # --------
 
 # Remote path
-path: public_html/
+path: public_html/ProPod
 
 # Remote file name in which the current revision is stored
 revision_file: .revision
