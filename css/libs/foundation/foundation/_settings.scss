@@ -128,6 +128,7 @@ $secondary-color: $green;
 
 
 $transparent : rgba(0,0,0,0);
+$form-transparent : rgba(255,255,255,0.8);
 // $white       : #FFFFFF;
 $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
@@ -1392,10 +1393,10 @@ $topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-color-hover: darken($ppblue, 15%);
+$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-color-hover: darken($primary-color, 15%);
 // $topbar-link-bg-hover: #272727;
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;

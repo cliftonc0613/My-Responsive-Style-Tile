@@ -7279,7 +7279,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: #555555;
+  background-color: #1e2d39;
   background: #272727;
   color: white;
 }
@@ -7471,7 +7471,7 @@ meta.foundation-mq-topbar {
   }
 
   .top-bar-section li.hover > a:not(.button) {
-    background-color: #555555;
+    background-color: #1e2d39;
     background: #272727;
     color: white;
   }
@@ -7483,7 +7483,7 @@ meta.foundation-mq-topbar {
   }
 
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #555555;
+    background-color: #1e2d39;
     background: #272727;
   }
 
@@ -7570,7 +7570,7 @@ meta.foundation-mq-topbar {
 
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     color: white;
-    background-color: #555555;
+    background-color: #1e2d39;
     background: #272727;
   }
 
@@ -7619,7 +7619,7 @@ meta.foundation-mq-topbar {
   }
 
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
+    background-color: #1e2d39;
     background: #272727;
     color: white;
   }
@@ -11708,6 +11708,21 @@ img.rst {
   width: 100%;
 }
 
+img.rst {
+  width: 100%;
+}
+
+.header {
+  background: url(http://dev.ctwdsdemos.com/files/uploads/2013/09/slider3.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 5em 0;
+}
+
+.header h2 {
+  color: white;
+  text-shadow: #333333 2px 2px 2px;
+}
+
 /*
 ** clear custom panel 
 **-------------------------------------------------------------------*/
@@ -11759,6 +11774,54 @@ img.rst {
 .clear-panel h4.subheader,
 .clear-panel h5.subheader,
 .clear-panel h6.subheader {
+  line-height: 1.4;
+}
+
+.form-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(227, 227, 227, 0.8);
+  margin-bottom: 1.25rem;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.form-panel > :first-child {
+  margin-top: 0;
+}
+
+.form-panel > :last-child {
+  margin-bottom: 0;
+}
+
+.form-panel h1,
+.form-panel h2,
+.form-panel h3,
+.form-panel h4,
+.form-panel h5,
+.form-panel h6,
+.form-panel p,
+.form-panel li,
+.form-panel dl {
+  color: #333333;
+}
+
+.form-panel h1,
+.form-panel h2,
+.form-panel h3,
+.form-panel h4,
+.form-panel h5,
+.form-panel h6 {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+
+.form-panel h1.subheader,
+.form-panel h2.subheader,
+.form-panel h3.subheader,
+.form-panel h4.subheader,
+.form-panel h5.subheader,
+.form-panel h6.subheader {
   line-height: 1.4;
 }
 
@@ -12233,6 +12296,14 @@ span.social-header {
 .features-section p {
   font-size: 1rem;
   line-height: 1rem;
+}
+
+/*
+   Topbar Custom Code
+   ========================================================================== */
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #2f485a;
 }
 
 /*

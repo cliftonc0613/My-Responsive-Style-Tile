@@ -75,6 +75,22 @@ img {
   &.rst {
     width:100%;
   }
+  &.rst {
+    width:100%;
+  }
+}
+
+.header {
+  background: url(http://dev.ctwdsdemos.com/files/uploads/2013/09/slider3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 5em 0;
+  h2 {
+    color: $white;
+    text-shadow: $oil 2px 2px 2px;
+  }
 }
 
 /*
@@ -91,6 +107,17 @@ img {
   );
   text-align: center;
   border: 0;
+}
+
+.form-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg: $form-transparent,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:10px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
 }
 
 /*
@@ -403,7 +430,12 @@ span {
 
 }
 
-
+/*
+   Topbar Custom Code
+   ========================================================================== */
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+background: darken($primary-color, 5%);
+}
 /*
    Media Queries
    ========================================================================== */
