@@ -185,8 +185,11 @@ img {
 ** carousel slider. 
 ** Website documentation: http://owlgraphic.com/owlcarousel/index.html 
 **-------------------------------------------------------------------*/
-#owl-demo .item{
-  // margin: 3px;
+#owl-demo {
+  margin: 0 25px;
+    &.item{
+    // margin: 3px;
+  }
 }
 #owl-demo .item img{
   display: block;
@@ -194,7 +197,15 @@ img {
   height: auto;
 }
 
+#foundation-slider .item{
+  margin: 15px;
+}
 
+#foundation-slider .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /*
    Text Block and Default Buttons
    ========================================================================== */
@@ -435,6 +446,14 @@ span {
    ========================================================================== */
 .top-bar-section li:not(.has-form) a:not(.button):hover {
 background: darken($primary-color, 5%);
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active)>a:not(.button) {
+  color: #fff;
+  background: $primary-color;
+  &:hover {
+   background: darken($primary-color, 5%); 
+  }
 }
 /*
    Media Queries

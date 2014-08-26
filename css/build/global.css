@@ -10010,7 +10010,21 @@ img.rst {
 ** carousel slider. 
 ** Website documentation: http://owlgraphic.com/owlcarousel/index.html 
 **-------------------------------------------------------------------*/
+#owl-demo {
+  margin: 0 25px;
+}
+
 #owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#foundation-slider .item {
+  margin: 15px;
+}
+
+#foundation-slider .item img {
   display: block;
   width: 100%;
   height: auto;
@@ -10360,6 +10374,14 @@ span.social-header {
    Topbar Custom Code
    ========================================================================== */
 .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #2f485a;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  color: #fff;
+  background: #38556b;
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button):hover {
   background: #2f485a;
 }
 

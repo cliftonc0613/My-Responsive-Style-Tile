@@ -1,14 +1,38 @@
-$("#owl-demo").owlCarousel({
+// $("#owl-demo").owlCarousel({
 
-  autoPlay: 3000,
+//   autoPlay: 3000,
 
-  items : 2,
+//   items : 2,
+//   lazyLoad : true,
+
+//   itemsDesktop : [1199,3],
+//   itemsDesktopSmall : [979,3]
+
+//    	  // navigation : true, // Show next and prev buttons
+//       // slideSpeed : 300,
+//       // paginationSpeed : 400,
+//       // singleItem:true
+ 
+//       // // "singleItem:true" is a shortcut for:
+//       // // items : 1, 
+//       // // itemsDesktop : false,
+//       // // itemsDesktopSmall : false,
+//       // // itemsTablet: false,
+//       // // itemsMobile : false
+
+// });
+
+$("#foundation-slider").owlCarousel({
+
+  autoPlay: 5000,
+
+  items : 5,
   lazyLoad : true,
 
   itemsDesktop : [1199,3],
   itemsDesktopSmall : [979,3]
 
-   	  // navigation : true, // Show next and prev buttons
+      // navigation : true, // Show next and prev buttons
       // slideSpeed : 300,
       // paginationSpeed : 400,
       // singleItem:true
@@ -21,7 +45,6 @@ $("#owl-demo").owlCarousel({
       // // itemsMobile : false
 
 });
-
 
 
 $(document).foundation();
