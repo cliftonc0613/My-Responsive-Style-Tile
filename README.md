@@ -1,4 +1,4 @@
-My-Responsive-Style-Tyle
+My-Responsive-Style-Tile
 ==========================
 
 ![alt tag](https://raw.github.com/cliftonc0613/My-Responsive-Style-Tile/master/images/ResponsiveStyleTiles.jpg)
