@@ -100,7 +100,7 @@ $row-width: rem-calc(1200);
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-$body-font-family: 'Colfax-Regular', Arial, sans-serif;
+$body-font-family: 'Colfax-Regular';
 // $font-weight-normal:normal;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -206,7 +206,7 @@ $oil         : #333333;
 
 // We use these to control header font styles
 $header-font-family: 'Colfax-Medium', Arial, sans-serif;
-$header-font-weight: 600;
+// $header-font-weight: 600;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.4;
