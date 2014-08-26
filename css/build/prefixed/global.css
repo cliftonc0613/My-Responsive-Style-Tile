@@ -478,7 +478,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -1810,7 +1810,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-size: 1rem;
 }
 
@@ -2486,7 +2486,7 @@ button,
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4611,7 +4611,7 @@ kbd {
 
 .label {
   font-weight: normal;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -5208,7 +5208,7 @@ ul.pagination li {
   color: #eeeeee;
   font-weight: normal;
   font-size: 1rem;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
 }
 
 .pricing-table .price {
@@ -5218,7 +5218,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
 }
 
 .pricing-table .description {
@@ -5609,7 +5609,7 @@ dialog::backdrop {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
 }
 
 .side-nav li {
@@ -5633,7 +5633,7 @@ dialog::backdrop {
 .side-nav li.active > a:first-child:not(.button) {
   color: #608bac;
   font-weight: normal;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
 }
 
 .side-nav li.divider {
@@ -5799,7 +5799,7 @@ dialog::backdrop {
   display: inline;
   margin-left: 1rem;
   margin-bottom: 0.625rem;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -6302,7 +6302,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Medium", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -6707,7 +6707,7 @@ blockquote p {
   background-color: #efefef;
   color: #222222;
   padding: 1rem 2rem;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-size: 1rem;
 }
 
@@ -7138,7 +7138,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 20px;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   text-transform: none;
@@ -11678,6 +11678,24 @@ body {
   color: #555555;
 }
 
+@font-face {
+  font-family: 'Colfax-Regular';
+  src: url(/fonts/Colfax-Regular.eot);
+  src: url(/fonts/Colfax-Regular.eot?#iefix) format("embedded-opentype"), url(/fonts/Colfax-Regular.woff) format("woff"), url(/fonts/Colfax-Regular.ttf) format("truetype"), url(/fonts/Colfax-Regular.svg#svgFontName) format("svg");
+}
+
+@font-face {
+  font-family: 'Colfax-Medium';
+  src: url(/fonts/Colfax-Medium.eot);
+  src: url(/fonts/Colfax-Medium.eot?#iefix) format("embedded-opentype"), url(/fonts/Colfax-Medium.woff) format("woff"), url(/fonts/Colfax-Medium.ttf) format("truetype"), url(/fonts/Colfax-Medium.svg#svgFontName) format("svg");
+}
+
+@font-face {
+  font-family: 'Colfax-Bold';
+  src: url(/fonts/Colfax-Bold.eot);
+  src: url(/fonts/Colfax-Bold.eot?#iefix) format("embedded-opentype"), url(/fonts/Colfax-Bold.woff) format("woff"), url(/fonts/Colfax-Bold.ttf) format("truetype"), url(/fonts/Colfax-Bold.svg#svgFontName) format("svg");
+}
+
 hr.hr-alt {
   margin: 20px 0;
 }
@@ -11883,7 +11901,7 @@ img.rst {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -11921,7 +11939,7 @@ img.rst {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -12009,6 +12027,7 @@ span.social-header {
 
 .learn-links h4 {
   margin: 20px 0 0 0;
+  font-family: 'Colfax-Medium', Arial, sans-serif;
 }
 
 .learn-links p {
@@ -12046,7 +12065,7 @@ span.social-header {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -12067,7 +12086,7 @@ span.social-header {
   -webkit-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
   margin: 10px 20px;
-  padding: 5px 50px;
+  padding: 8px 35px;
 }
 
 .widget-button:hover,
@@ -12084,7 +12103,7 @@ span.social-header {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Colfax-Regular", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -12105,7 +12124,7 @@ span.social-header {
   -webkit-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
   margin: 10px 20px;
-  padding: 8px 30px;
+  padding: 8px 25px;
   background: #4a708c;
 }
 
@@ -12154,7 +12173,7 @@ span.social-header {
   font-size: 18px;
   padding-right: 0.5em;
   position: absolute;
-  top: 8px;
+  top: 5px;
   left: 0px;
 }
 
@@ -12225,7 +12244,7 @@ span.social-header {
     border-style: solid;
     border-width: 0px;
     cursor: pointer;
-    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-family: "Colfax-Regular", Arial, sans-serif;
     font-weight: normal;
     line-height: normal;
     margin: 0 0 1.25rem;
@@ -12276,6 +12295,7 @@ span.social-header {
 
   .learn-links h4 {
     margin: 20px 0 0 0;
+    font-family: 'Colfax-Medium', Arial, sans-serif;
   }
 
   .learn-links p {
