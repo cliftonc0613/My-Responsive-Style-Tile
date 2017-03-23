@@ -27,6 +27,5 @@ This is a repo for my responsive style tile that I creating with [Zurb Foundatio
 * Facebook: [http://facebook.com/CTWebDev](http://facebook.com/CTWebDev "CTWebDev on facebook")
 
 ## Web Demo
-* See [http://responsivestyletiles.com](http://responsivestyletiles.com)
-
+* See <a href="http://responsivestyletiles.com" target="_blank">http://responsivestyletiles.com</a>
 
