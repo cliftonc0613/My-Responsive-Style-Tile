@@ -6,7 +6,10 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+.idea
+.idea/deployment.xml
+.idea/dictionaries/cliftoncanady.xml
+.idea/vcs.xml
 pids
 logs
 results
