@@ -9245,8 +9245,8 @@ th.hide-for-touch {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/fonts/fontawesome-webfont.eot?v=4.1.0");
-  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+  src: url("/assets/fonts/fontawesome-webfont.eot?v=4.1.0");
+  src: url("/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("/assets/fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("/assets/fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("/assets/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -11674,20 +11674,20 @@ th.hide-for-touch {
 
 @font-face {
   font-family: 'Colfax-Regular';
-  src: url(/fonts/Colfax/Colfax-Regular.eot);
-  src: url(/fonts/Colfax/Colfax-Regular.eot?#iefix) format("embedded-opentype"), url(/fonts/Colfax/Colfax-Regular.woff) format("woff"), url(/fonts/Colfax/Colfax-Regular.ttf) format("truetype"), url(/fonts/Colfax/Colfax-Regular.svg#svgFontName) format("svg");
+  src: url(/assets/fonts/Colfax/Colfax-Regular.eot);
+  src: url(/assets/fonts/Colfax/Colfax-Regular.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/Colfax/Colfax-Regular.woff) format("woff"), url(/assets/fonts/Colfax/Colfax-Regular.ttf) format("truetype"), url(/assets/fonts/Colfax/Colfax-Regular.svg#svgFontName) format("svg");
 }
 
 @font-face {
   font-family: 'Colfax-Medium';
-  src: url(/fonts/Colfax/Colfax-Medium.eot);
-  src: url(/fonts/Colfax/Colfax-Medium.eot?#iefix) format("embedded-opentype"), url(/fonts/Colfax/Colfax-Medium.woff) format("woff"), url(/fonts/Colfax/Colfax-Medium.ttf) format("truetype"), url(/fonts/Colfax/Colfax-Medium.svg#svgFontName) format("svg");
+  src: url(/assets/fonts/Colfax/Colfax-Medium.eot);
+  src: url(/assets/fonts/Colfax/Colfax-Medium.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/Colfax/Colfax-Medium.woff) format("woff"), url(/assets/fonts/Colfax/Colfax-Medium.ttf) format("truetype"), url(/assets/fonts/Colfax/Colfax-Medium.svg#svgFontName) format("svg");
 }
 
 @font-face {
   font-family: 'Colfax-Bold';
-  src: url(/fonts/Colfax/Colfax-Bold.eot);
-  src: url(/fonts/Colfax/Colfax-Bold.eot?#iefix) format("embedded-opentype"), url(/fonts/Colfax/Colfax-Bold.woff) format("woff"), url(/fonts/Colfax/Colfax-Bold.ttf) format("truetype"), url(/fonts/Colfax/Colfax-Bold.svg#svgFontName) format("svg");
+  src: url(/assets/fonts/Colfax/Colfax-Bold.eot);
+  src: url(/assets/fonts/Colfax/Colfax-Bold.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/Colfax/Colfax-Bold.woff) format("woff"), url(/assets/fonts/Colfax/Colfax-Bold.ttf) format("truetype"), url(/assets/fonts/Colfax/Colfax-Bold.svg#svgFontName) format("svg");
 }
 
 body {
