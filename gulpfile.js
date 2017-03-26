@@ -9,11 +9,16 @@ var jshint = require('gulp-jshint'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     cleanCSS = require('gulp-clean-css'),
+    sourcemaps = require('gulp-sourcemaps'),
+    stripdebug = require('gulp-strip-debug'),
+    notify = require('gulp-notify'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     replace = require('gulp-replace'),
+    gutil = require('gulp-util'),
     notify = require('gulp-notify'),
-    
+    base64 = require('gulp-base64');
+
     browsersync = require('browser-sync');
 
 // Enter URL of your local server here
@@ -63,7 +68,7 @@ gulp.task('browser-sync', ['build'], function() {
 
     browserSync.init(files, {
         // Proxy address
-        proxy: URL,
+        proxy: URL
 
         // Port #
         // port: PORT
@@ -71,31 +76,45 @@ gulp.task('browser-sync', ['build'], function() {
 });
 
 // BrowserSync reload all Browsers
-gulp.task('browsersync-reload', function () {
-    browsersync.reload();
-});
+// gulp.task('browsersync-reload', function () {
+//     browsersync.reload();
+// });
 
 // Optimize Images task
 gulp.task('images', function() {
-    return gulp.src('./assets/images/**/*.{png,jpg,gif}')
+    return gulp.src('./assets/images/**/*.{gif,jpg,png}')
         .pipe(imagemin({
             progressive: true,
             interlaced: true,
             svgoPlugins: [ {removeViewBox:false}, {removeUselessStrokeAndFill:false} ]
         }))
-        .pipe(gulp.dest('./public_html/assets/img/'))
+        .pipe(gulp.dest('./assets/' + outputDir + '/images'))
+        .pipe(browsersync.reload({ stream:true }))
+        .pipe(notify({ message: 'CSS Styles task complete' }));
 });
 
+// CSS task
+// Compile Our Sass
+gulp.task('css', function() {
+    return gulp.src('./assets/scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./assets/' + outputDir + '/css/'))
+        .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
+        .pipe(base64({ extensions:['svg'] }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./assets/' + outputDir + '/css/min'))
+        .pipe(browsersync.reload({ stream:true }))
+        .pipe(notify({ message: 'CSS Styles task complete' }));
+});
 
-gulp.task('minify-css', function() {
-    return gulp.src('styles/*.css')
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('dist'));
+// Watch task
+gulp.task('watch', ['browser-sync'], function () {
+    gulp.watch('./assets/scss/**/*', ['css']);
+    gulp.watch('./assets/javascript/**/*', ['jshint', 'scripts', 'browsersync-reload']);
+    //gulp.watch('./craft/templates/**/*', ['browsersync-reload']);
 });
-// ===== JSHint Task
-gulp.task('jshint', function() {
-    return gulp.src('assets/javascript/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish'))
-        .pipe(notify('Jshint - Successful'));
-});
+
+// Generic tasks
+gulp.task('default', ['css']);
+gulp.task('images', ['images']);
