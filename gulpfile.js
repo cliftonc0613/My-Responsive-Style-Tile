@@ -9,10 +9,68 @@ var jshint = require('gulp-jshint'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    browsersync = require('browser-sync');
+
+// Enter URL of your local server here
+// Example: 'http://localwebsite.dev'
+var URL = 'http://responsivestyletiles.dev';
 
 // ===== Variable for output directory
 var outputDir   = '/build/';
+
+// error function for plumber
+var onError = function (err) {
+    gutil.beep();
+    console.log(err);
+    this.emit('end');
+};
+
+// Browser definitions for autoprefixer
+var AUTOPREFIXER_BROWSERS = [
+    'last 3 versions',
+    'ie >= 8',
+    'ios >= 6',
+    'android >= 4.4',
+    'bb >= 10'
+];
+
+// Datestamp for cache busting
+var getStamp = function() {
+    var myDate = new Date();
+
+    var myYear = myDate.getFullYear().toString();
+    var myMonth = ('0' + (myDate.getMonth() + 1)).slice(-2);
+    var myDay = ('0' + myDate.getDate()).slice(-2);
+    var mySeconds = myDate.getSeconds().toString();
+
+    var myFullDate = myYear + myMonth + myDay + mySeconds;
+
+    return myFullDate;
+};
+
+// Browsersync task
+gulp.task('browser-sync', ['build'], function() {
+
+    var files = [
+        '**/*.html',
+        'assets/images/**/*.{png,jpg,gif}',
+    ];
+
+    browserSync.init(files, {
+        // Proxy address
+        proxy: URL,
+
+        // Port #
+        // port: PORT
+    });
+});
+
+// BrowserSync reload all Browsers
+gulp.task('browsersync-reload', function () {
+    browsersync.reload();
+});
+
 
 // ===== JSHint Task
 gulp.task('jshint', function() {
