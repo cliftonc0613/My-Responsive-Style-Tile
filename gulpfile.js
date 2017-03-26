@@ -54,7 +54,7 @@ gulp.task('browser-sync', ['build'], function() {
 
     var files = [
         '**/*.html',
-        'assets/images/**/*.{png,jpg,gif}',
+        'assets/images/**/*.{png,jpg,gif,svg}',
     ];
 
     browserSync.init(files, {
@@ -72,6 +72,11 @@ gulp.task('browsersync-reload', function () {
 });
 
 
+gulp.task('minify-css', function() {
+    return gulp.src('styles/*.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist'));
+});
 // ===== JSHint Task
 gulp.task('jshint', function() {
     return gulp.src('assets/javascript/*.js')
