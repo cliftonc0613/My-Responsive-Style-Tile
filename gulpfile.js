@@ -11,6 +11,9 @@ var jshint = require('gulp-jshint'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    replace = require('gulp-replace'),
+    notify = require('gulp-notify'),
+    
     browsersync = require('browser-sync');
 
 // Enter URL of your local server here
@@ -82,6 +85,7 @@ gulp.task('images', function() {
         }))
         .pipe(gulp.dest('./public_html/assets/img/'))
 });
+
 
 gulp.task('minify-css', function() {
     return gulp.src('styles/*.css')
