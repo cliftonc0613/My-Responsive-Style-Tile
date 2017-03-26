@@ -8,6 +8,7 @@ var jshint = require('gulp-jshint'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
+    cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     browsersync = require('browser-sync');
