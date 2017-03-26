@@ -1,19 +1,28 @@
 {
   "name": "responsive-styletiles",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is a repo for my style style that I creating with Zurb Foundation 6, plus a bit more.",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cliftonc0613/My-Responsive-Style-Tile.git"
+    "url": "git@github.com:cliftonc0613/My-Responsive-Style-Tile.git"
   },
   "author": "Clifton Canady/Katherine Wakefield",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cliftonc0613/My-Responsive-Style-Tile/issues"
   },
-  "homepage": "https://github.com/cliftonc0613/My-Responsive-Style-Tile#readme"
+  "homepage": "https://github.com/cliftonc0613/My-Responsive-Style-Tile#readme",
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
 }
