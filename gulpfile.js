@@ -55,7 +55,7 @@ gulp.task('browser-sync', ['build'], function() {
 
     var files = [
         '**/*.html',
-        'assets/images/**/*.{png,jpg,gif,svg}',
+        'assets/images/**/*.{png,jpg,gif}',
     ];
 
     browserSync.init(files, {
@@ -72,6 +72,16 @@ gulp.task('browsersync-reload', function () {
     browsersync.reload();
 });
 
+// Optimize Images task
+gulp.task('images', function() {
+    return gulp.src('./assets/images/**/*.{png,jpg,gif}')
+        .pipe(imagemin({
+            progressive: true,
+            interlaced: true,
+            svgoPlugins: [ {removeViewBox:false}, {removeUselessStrokeAndFill:false} ]
+        }))
+        .pipe(gulp.dest('./public_html/assets/img/'))
+});
 
 gulp.task('minify-css', function() {
     return gulp.src('styles/*.css')
