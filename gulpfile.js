@@ -88,9 +88,9 @@ gulp.task('images', function() {
             interlaced: true,
             svgoPlugins: [ {removeViewBox:false}, {removeUselessStrokeAndFill:false} ]
         }))
-        .pipe(gulp.dest('./assets/' + outputDir + '/images'))
+        .pipe(gulp.dest('./assets/' + outputDir + '/images/'))
         .pipe(browsersync.reload({ stream:true }))
-        .pipe(notify({ message: 'CSS Styles task complete' }));
+        .pipe(notify({ message: 'Optimize Images task complete' }));
 });
 
 // CSS task
@@ -106,6 +106,15 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./assets/' + outputDir + '/css/min'))
         .pipe(browsersync.reload({ stream:true }))
         .pipe(notify({ message: 'CSS Styles task complete' }));
+});
+
+// Lint JS task
+gulp.task('jslint', function() {
+    return gulp.src('./assets/js/modules/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
+        .pipe(jshint.reporter('fail'))
+        .pipe(notify({ message: 'Lint task complete' }));
 });
 
 // Watch task
