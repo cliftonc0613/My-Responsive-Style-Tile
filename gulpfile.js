@@ -121,7 +121,6 @@ gulp.task('jslint', function() {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('./assets/scss/**/*', ['css']);
     gulp.watch('./assets/javascript/**/*', ['jshint', 'scripts', 'browsersync-reload']);
-    //gulp.watch('./craft/templates/**/*', ['browsersync-reload']);
 });
 
 // Generic tasks
