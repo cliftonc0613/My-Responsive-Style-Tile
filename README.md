@@ -9,7 +9,7 @@ This is a repo for my responsive style tile that I creating with [Zurb Foundatio
 
 
 ## Technology
-* [Zurb Foundation 5](http://foundation.zurb.com/ "Zurb Foundation 5")
+* [Zurb Foundation 6](http://foundation.zurb.com/ "Zurb Foundation 6")
 * [OWL Carousel](http://owlgraphic.com/owlcarousel/)
 * [Font Awesome 4.1.0](http://fortawesome.github.io/Font-Awesome/)
 * [Chris Coyier's Grunt Boilerplate](https://github.com/chriscoyier/My-Grunt-Boilerplate/)
@@ -26,6 +26,6 @@ This is a repo for my responsive style tile that I creating with [Zurb Foundatio
 * Facebook: [http://facebook.com/CTWebDev](http://facebook.com/CTWebDev "CTWebDev on facebook")
 
 ## Web Demo
-* See [http://responsivestyletil.es](http://responsivestyletil.es/)
+* See [http://responsivestyletiles.com/](http://responsivestyletiles.com/)
 
 

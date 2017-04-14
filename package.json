@@ -1,21 +1,38 @@
 {
-  "name": "example-project",
-  "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "glob": "~3.2.8",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-sass": "~0.5.0",
-    "grunt-contrib-imagemin": "~0.1.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-autoprefixer": "~0.4.1",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-contrib-htmlmin": "~0.3.0"
+  "name": "responsive-styletiles",
+  "version": "2.0.0",
+  "description": "This is a repo for my style style that I creating with Zurb Foundation 6, plus a bit more.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "load-grunt-tasks": "~0.2.0"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cliftonc0613/My-Responsive-Style-Tile.git"
+  },
+  "author": "Clifton Canady/Katherine Wakefield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cliftonc0613/My-Responsive-Style-Tile/issues"
+  },
+  "homepage": "https://github.com/cliftonc0613/My-Responsive-Style-Tile#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
   }
 }
