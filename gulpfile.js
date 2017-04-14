@@ -18,7 +18,7 @@ var jshint = require('gulp-jshint'),
     gutil = require('gulp-util'),
     notify = require('gulp-notify'),
     base64 = require('gulp-base64');
-
+imagemin = require('gulp-imagemin');
     browsersync = require('browser-sync');
 
 // Enter URL of your local server here
@@ -75,10 +75,10 @@ gulp.task('browser-sync', ['build'], function() {
     });
 });
 
-// BrowserSync reload all Browsers
-// gulp.task('browsersync-reload', function () {
-//     browsersync.reload();
-// });
+//BrowserSync reload all Browsers
+gulp.task('browsersync-reload', function () {
+    browsersync.reload();
+});
 
 // Optimize Images task
 gulp.task('images', function() {
@@ -124,5 +124,4 @@ gulp.task('watch', ['browser-sync'], function () {
 });
 
 // Generic tasks
-gulp.task('default', ['css']);
-gulp.task('images', ['images']);
+gulp.task('default', ['css', 'watch']);
